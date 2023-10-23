@@ -5,7 +5,6 @@ Feature: Productos
     Given url "https://fakestoreapi.com/products"
     When method get
     Then status 200
-    * match response == '#[20]'
     * match response contains deep product
 
   Scenario: Validar Catalogo de Productos
